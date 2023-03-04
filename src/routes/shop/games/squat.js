@@ -19,7 +19,7 @@ game.promo = {
   shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   brandColor: "#47babb",
   id: "squat",
-  serial: "",
+  serial: "10",
   price: "",
 };
 game.croundfanding = {

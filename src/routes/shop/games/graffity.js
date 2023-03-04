@@ -20,7 +20,7 @@ game.promo = {
   shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   brandColor: "#FEEB1A",
   id: "graffity",
-  serial: "4",
+  serial: "3",
   price: "",
   categories: [
     categoriesGames[1],

@@ -8,7 +8,7 @@ game.promo = {
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	brandColor: '#702282',
 	id: 'kanbanel',
-	serial: '1',
+	serial: '5',
 	price: 0,
 	sale: 50
 };

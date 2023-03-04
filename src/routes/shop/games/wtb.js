@@ -16,7 +16,7 @@ game.promo = {
   shortDescription: "",
   brandColor: "#E4262E",
   id: "wtb",
-  serial: "",
+  serial: "11",
   price: "",
 };
 game.croundfanding = {

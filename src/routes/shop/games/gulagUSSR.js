@@ -20,7 +20,7 @@ game.promo = {
   shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
   brandColor: "#E40F2A",
   id: "gulag-ussr",
-  serial: "5",
+  serial: "4",
   price: "",
   categories: [
     categoriesGames[1],
