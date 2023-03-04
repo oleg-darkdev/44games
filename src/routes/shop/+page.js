@@ -7,9 +7,9 @@ import itGames from "./games/categories/itGames"; // linux, kanbanel,
 export function load({ params }) {
   return {
     allGamesList: {
-        // civicActivism: civicActivismGames,
-        // historical: historicalGames,
-        // art: artGames,
+        civicActivism: civicActivismGames,
+        historical: historicalGames,
+        art: artGames,
         it: itGames,
         // politicalGames: politicalGames,
         // economicalGames: economicalGames,
@@ -51,7 +51,7 @@ export function load({ params }) {
       // artGames
 
       // graffity: artGames.graffity,
-      
+
       // tattoo:  artGames.tattoo ,
 
       // itGames

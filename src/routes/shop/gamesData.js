@@ -25,7 +25,7 @@ let allGamesList = {
 	categories: {
 		civicActivism: civicActivismGames,
 		historical: historicalGames,
-		art: artGames,
+		art: artGames, 
 		it: itGames,
 		// politicalGames: politicalGames,
 		// economicalGames: economicalGames,
