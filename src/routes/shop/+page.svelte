@@ -1,52 +1,39 @@
 <script>
-  import GamesCategorySection from "../../widgets/ui/GamesCategorySection.svelte";
-  export let data;
+	import GamesCategorySection from '../../widgets/ui/GamesCategorySection.svelte';
+	import FiltresItCategory from '../../features/ui/FiltresItCategory.svelte';
+	import Header from '../../widgets/ui/Header.svelte';
+	import Footer from '../../widgets/ui/Footer.svelte';
 
-  console.log(data);
+	export let data;
 
-
+	// console.log(data.allGamesList);
 </script>
 
-<GamesCategorySection games={data.allGamesList.it} categoryTitle='Games from the IT Universe'/>
+<Header />
+<main class="flex flex-col ">
+	<h1 class="mb-4 pl-4 text-7xl text-gray-200">44games shop</h1>
 
-
+	<section class="flex flex h-auto flex-row flex-wrap items-center rounded-xl p-2">
+		<FiltresItCategory />
+		<GamesCategorySection games={data.allGamesList.it} categoryTitle="About IT" />
+	</section>
+	<section class="flex flex h-auto flex-row flex-wrap-reverse items-center rounded-xl p-2">
+		<GamesCategorySection games={data.allGamesList.art} categoryTitle="About ART" />
+		<FiltresItCategory />
+	</section>
+	<section class="flex flex h-auto flex-row flex-wrap items-center rounded-xl p-2">
+		<FiltresItCategory />
+		<GamesCategorySection games={data.allGamesList.historical} categoryTitle="Historical" />
+	</section>
+	<section class="mb-12 flex flex h-auto flex-row flex-wrap-reverse items-center rounded-xl p-2">
+		<GamesCategorySection
+			games={data.allGamesList.civicActivism}
+			categoryTitle="About Social Activism"
+		/>
+		<FiltresItCategory />
+	</section>
+</main>
+<Footer />
 
 <!--
-<div class="artboard phone-1">
-  <div class="flex flex-col">
-    <div class="form-control">
-      <label class="label cursor-pointer">
-        <span class="label-text">Remember me</span>
-        <input
-          type="checkbox"
-          class="toggle toggle-success toggle-lg"
-          checked
-        />
-      </label>
-    </div>
-    <div class="form-control">
-      <label class="label cursor-pointer">
-        <span class="label-text">Remember me</span>
-        <input
-          type="checkbox"
-          class="toggle toggle-warning toggle-lg"
-          checked
-        />
-      </label>
-    </div>
-    <div class="form-control">
-      <label class="label cursor-pointer">
-        <span class="label-text">Remember me</span>
-        <input type="checkbox" class="toggle toggle-info toggle-lg" checked />
-      </label>
-    </div>
-    <div class="form-control">
-      <label class="label cursor-pointer">
-        <span class="label-text">Remember me</span>
-        <input type="checkbox" class="toggle toggle-error toggle-lg" checked />
-      </label>
-    </div>
-  </div>
-</div> -->
-
-
+		 -->
