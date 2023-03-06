@@ -24,7 +24,7 @@ game.promo = {
 	serial: '10',
 	price: '',
 
-	categories: [categoriesGames[1],  categoriesGames[6]]
+	// categories: [categoriesGames[1],  categoriesGames[6]]
 };
 game.croundfanding = {
 	links: {

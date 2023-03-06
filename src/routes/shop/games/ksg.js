@@ -22,7 +22,7 @@ game.promo = {
 	idCommerceJs: 'prod_31q0o3E6k2lDdj',
 	serial: '6',
 	price: '',
-	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
+	// categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
 };
 game.moreInfo = {
 	players: '2-8',

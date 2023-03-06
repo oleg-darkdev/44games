@@ -13,7 +13,7 @@ class Game {
 			id: '',
 			serial: '',
 			price: 0,
-			categories: ['lorem', 'lorem', 'lorem', 'lorem'],
+			// categories: ['lorem', 'lorem', 'lorem', 'lorem'],
 			sale: '0'
 		};
 		this.croundfanding = {

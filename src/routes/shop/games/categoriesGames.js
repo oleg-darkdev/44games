@@ -39,10 +39,7 @@ let categoriesGames = [
 		text: 'IT',
 		emoji: '🤖'
 	}
-	//         {
-	//     text: 'It',
-	//     emoji: ''
-	// },
+
 ];
 
 export default categoriesGames;
