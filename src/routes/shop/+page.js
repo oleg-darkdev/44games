@@ -1,62 +1,49 @@
-import historicalGames from "./games/categories/historicalGames";
-import civicActivismGames from "./games/categories/civicActivismGames";
-import artGames from "./games/categories/artGames"; // graffity, tattoo,
-import itGames from "./games/categories/itGames"; // linux, kanbanel,
+import historicalGames from './games/categories/historicalGames';
+import civicActivismGames from './games/categories/civicActivismGames';
+import artGames from './games/categories/artGames';
+import itGames from './games/categories/itGames';
+import { client } from './commerce';
 
+const allGamesList = [].concat(historicalGames, civicActivismGames, artGames, itGames);
 
-export function load({ params }) {
-  return {
-    allGamesList: {
-        civicActivism: civicActivismGames,
-        historical: historicalGames,
-        art: artGames,
-        it: itGames,
-        // politicalGames: politicalGames,
-        // economicalGames: economicalGames,
-        // strategicGames: strategicGames,
-        // officeGames: officeGames,
-        // managementGames: managementGames
-      // all: [].concat(getGames(historicalGames), getGames(civicActivismGames)),
+// commerceJs
+const merchant = await client.merchants.about(),
+	cart = await client.cart.retrieve(), // store
+	categoriesList = await client.categories.list(),
+	{ data: products } = await client.products.list();
 
-      // historicalGames
-      // gulagUSSR: historicalGames.gulagUSSR,
+let gameList = [];
 
-      // katyn: historicalGames.katyn,
-      // yakusa: historicalGames.yakusa,
-      // wtb: historicalGames.wtb,
-      // wikileaks: historicalGames.wikileaks,
+const mergeGameData = (game, commerceJsProduct) =>
+	Object.assign(game, {
+		commerceJs: {
+			price: commerceJsProduct.price.raw,
+			inventory: commerceJsProduct.inventory.available,
+			sku: commerceJsProduct.sku,
+			thankYouUrl: commerceJsProduct.thank_you_url,
+			conditionals: commerceJsProduct.conditionals,
+			collects: commerceJsProduct.collects,
+			checkoutUrl: commerceJsProduct.checkout_url
+		}
+	});
 
-      // covid: historicalGames.covid,
-      // ksg: historicalGames.ksg,
+const findGame = () => {
+	let foundedGame;
 
-      // gulagRussia:  . ,
-      // : historicalGames. ,
+	products.forEach((product) => {
+		foundedGame = allGamesList.find((game) => game.promo.idCommerceJs === product.id);
+		gameList.push(mergeGameData(foundedGame, product));
+	});
+};
 
-      // civicActivismGames
+export async function load({ params }) {
+	findGame();
 
-      // a: civicActivismGames.a,
-      // fnb: civicActivismGames.fnb,
-
-      // eco: civicActivismGames.eco,
-
-      // squat: civicActivismGames.squat,
-
-      // hackerspace: civicActivismGames.hackerspace,
-
-      // lgbt: civicActivismGames.lgbt,
-      // ror: civicActivismGames.ror,
-
-      //  : civicActivismGames,
-
-      // artGames
-
-      // graffity: artGames.graffity,
-
-      // tattoo:  artGames.tattoo ,
-
-      // itGames
-      // kanbanel: itGames.kanbanel,
-      // linux: itGames.linux,
-    },
-  };
+	return {
+		allGamesList: gameList,
+		merchant: merchant,
+		cart: cart,
+		categories: categoriesList,
+		gameList: gameList
+	};
 }

@@ -19,6 +19,7 @@
 		"check:all": "yarn format && yarn lint"
 	},
 	"dependencies": {
+		"@chec/commerce.js": "^2.8.0",
 		"@tanstack/svelte-query": "^4.24.4",
 		"aos": "^2.3.4"
 	},
