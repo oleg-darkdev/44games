@@ -5,38 +5,30 @@
 	import Footer from '../../widgets/ui/Footer.svelte';
 
 	export let data;
-
-	// console.log(data.allGamesList);
+  // console.log(data.allGamesList[0].data)
 </script>
 
 <Header />
 
-
-<!-- <main class="flex flex-col ">
-
+<main class="flex flex-col ">
 	<h1 class="mb-4 pl-12 text-7xl text-gray-200">44games shop</h1>
 
-	<section class="flex flex h-auto flex-row flex-wrap items-center rounded-xl p-2">
-		<FiltresItCategory />
-		<GamesCategorySection games={data.allGamesList.it} categoryTitle="About IT" />
-	</section>
-	<section class="flex flex h-auto flex-row flex-wrap-reverse items-center rounded-xl p-2">
-		<GamesCategorySection games={data.allGamesList.art} categoryTitle="About ART" />
-		<FiltresItCategory />
-	</section>
-	<section class="flex flex h-auto flex-row flex-wrap items-center rounded-xl p-2">
-		<FiltresItCategory />
-		<GamesCategorySection games={data.allGamesList.historical} categoryTitle="Historical" />
-	</section>
-	<section class="mb-12 flex flex h-auto flex-row flex-wrap-reverse items-center rounded-xl p-2">
-		<GamesCategorySection
-			games={data.allGamesList.civicActivism}
-			categoryTitle="Social Activism"
-		/>
-		<FiltresItCategory />
-	</section>
-</main> -->
+	{#each data.allGamesList as filredGamesList}
+		<section class="flex flex h-auto wrapper  items-center rounded-xl p-2">
+			<FiltresItCategory />
+			<GamesCategorySection games={filredGamesList.data} categoryTitle={filredGamesList.category} />
+		</section>
+	{/each}
+</main>
 <Footer />
 
-<!--
-		 -->
+<style>
+  .wrapper:nth-child(odd)  {
+    flex-wrap: wrap;
+    flex-direction: row-reverse;
+  }
+    .wrapper:nth-child(even )  {
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+</style>
