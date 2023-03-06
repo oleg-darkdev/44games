@@ -7,27 +7,24 @@ import recommendationsData from "./graffity/recommendations";
 let game = new GameClass();
 // game.faq = faq.a;
 game.promo = {
-  name: "🖍 Graffity",
-  shortName: "🖍 Graffity",
-  banner:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/graffity_banner.png",
-  landingBanner:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/graffity_bg.png",
-  logo: "img/games/logos/graffity_logo.png",
-  promo:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/graffity.png",
-  status: 1, // 0 - alfa, 1 - beta, 2 - good,
-  shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  brandColor: "#FEEB1A",
-  id: "graffity",
-  serial: "3",
-  price: "",
-  categories: [
-    categoriesGames[1],
-    categoriesGames[2],
-    categoriesGames[5],
-    categoriesGames[6],
-  ],
+	name: '🖍 Graffity',
+	shortName: '🖍 Graffity',
+	banner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/graffity_banner.png',
+	landingBanner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/graffity_bg.png',
+	logo: 'img/games/logos/graffity_logo.png',
+	promo:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/graffity.png',
+	status: 1, // 0 - alfa, 1 - beta, 2 - good,
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	brandColor: '#FEEB1A',
+	id: 'graffity',
+
+	idCommerceJs: 'prod_aZWNoy37kLl80J',
+	serial: '3',
+	price: '',
+	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
 };
 game.moreInfo = {
   players: "2-8",

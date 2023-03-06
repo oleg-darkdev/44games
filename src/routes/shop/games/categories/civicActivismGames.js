@@ -6,14 +6,14 @@ import ror from '../ror';
 import lgbt from '../lgbt';
 // import hackerspace from '../hackerspace';
 
-const games = {
+const games = [
 	a,
 	fnb,
 	// eco,
 	squat,
 	// hackerspace,
 	lgbt,
-	ror,
-};
+	ror
+];
 
 export default games;

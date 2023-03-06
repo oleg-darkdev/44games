@@ -17,6 +17,7 @@ game.promo = {
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	brandColor: '#702282',
 	id: '',
+	idCommerceJs: 'prod_G6kVw7vaXal2eD',
 	serial: '1',
 	price: 0,
 	sale: 50

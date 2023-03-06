@@ -7,21 +7,23 @@ import recommendationsData from "./linux/recommendations";
 let game = new GameClass();
 // game.faq = faq.a;
 game.promo = {
-  name: "🥁 Rhythms of Resistance",
-  shortName: "🥁 ROR",
-  banner:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/ror_banner.png",
-  landingBanner:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/samba_bg.png",
-  logo: "img/games/logos/ror_logo.png",
-  promo:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/samba.png",
-  status: 1, // 0 - alfa, 1 - beta, 2 - good,
-  shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  brandColor: "#A6539B",
-  id: "ror",
-  serial: "9",
-  price: "",
+	name: '🥁 Rhythms of Resistance',
+	shortName: '🥁 ROR',
+	banner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/ror_banner.png',
+	landingBanner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/samba_bg.png',
+	logo: 'img/games/logos/ror_logo.png',
+	promo:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/samba.png',
+	status: 1, // 0 - alfa, 1 - beta, 2 - good,
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	brandColor: '#A6539B',
+	id: 'ror',
+
+	idCommerceJs: 'prod_G6kVw7vaXal2eD',
+	serial: '9',
+	price: ''
 };
 game.moreInfo = {
   players: "2-8",

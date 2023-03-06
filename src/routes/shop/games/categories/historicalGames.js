@@ -6,7 +6,7 @@ import gulagUSSR from '../gulagUSSR';
 // import covid from '../covid';
 import ksg from '../ksg';
 
-const games = {
+const games = [
 	gulagUSSR,
 	// katyn,
 	// yakusa,
@@ -14,6 +14,6 @@ const games = {
 	// wikileaks,
 	// covid,
 	ksg
-};
+];
 
 export default games;

@@ -1,10 +1,10 @@
 import kanbanel from '../kanbanel';
 import linux from '../linux';
 
-const games = {
+const games = [
 	kanbanel,
 	linux
-};
+];
 
 // const games = {
 //   kanbanel,

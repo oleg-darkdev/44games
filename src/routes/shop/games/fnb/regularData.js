@@ -18,6 +18,7 @@ game.promo = {
 	brandColor: '#702282',
 	id: '',
 	serial: '1',
+	idCommerceJs: 'prod_ZRjywMJdGgo7Y8',
 	price: 0,
 	sale: 50
 };

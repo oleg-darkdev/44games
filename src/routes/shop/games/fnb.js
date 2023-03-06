@@ -7,27 +7,24 @@ import recommendationsData from "./fnb/recommendations";
 let game = new GameClass();
 // game.faq = faq.a;
 game.promo = {
-  name: "🥕 FNB - food not bombs",
-  shortName: "🥕 FNB",
-  banner:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/fnb_banner.png",
-  landingBanner:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/fnb_bg.png",
-  logo: "img/games/logos/fnb_logo.png",
-  promo:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/fnb.png",
-  status: 1, // 0 - alfa, 1 - beta, 2 - good,
-  shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  brandColor: "#81B228",
-  id: "fnb",
-  serial: "2",
-  price: "",
-  categories: [
-    categoriesGames[1],
-    categoriesGames[2],
-    categoriesGames[5],
-    categoriesGames[6],
-  ],
+	name: '🥕 FNB - food not bombs',
+	shortName: '🥕 FNB',
+	banner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/fnb_banner.png',
+	landingBanner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/fnb_bg.png',
+	logo: 'img/games/logos/fnb_logo.png',
+	promo:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/fnb.png',
+	status: 1, // 0 - alfa, 1 - beta, 2 - good,
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	brandColor: '#81B228',
+	id: 'fnb',
+
+	idCommerceJs: 'prod_ZRjywMJdGgo7Y8',
+	serial: '2',
+	price: '',
+	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
 };
 game.moreInfo = {
   players: "2-8",

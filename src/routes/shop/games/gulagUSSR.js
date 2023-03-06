@@ -7,27 +7,24 @@ import recommendationsData from "./gulagUSSR/recommendations";
 let game = new GameClass();
 // game.faq = faq.a;
 game.promo = {
-  name: "💀 Gulag: 1928-1953",
-  shortName: "💀 Gulag",
-  banner:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/gulag_banner.png",
-  landingBanner:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/gulag_bg.png",
-  logo: "img/games/logos/gulagUSSR_logo.png",
-  promo:
-    "https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/gulag.png",
-  status: 1, // 0 - alfa, 1 - beta, 2 - good,
-  shortDescription: "Lorem ipsum dolor sit amet, consectetur adipiscing elit.",
-  brandColor: "#E40F2A",
-  id: "gulag-ussr",
-  serial: "4",
-  price: "",
-  categories: [
-    categoriesGames[1],
-    categoriesGames[2],
-    categoriesGames[5],
-    categoriesGames[6],
-  ],
+	name: '💀 Gulag: 1928-1953',
+	shortName: '💀 Gulag',
+	banner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/banners/gulag_banner.png',
+	landingBanner:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/bg/gulag_bg.png',
+	logo: 'img/games/logos/gulagUSSR_logo.png',
+	promo:
+		'https://raw.githubusercontent.com/oleg-darkdev/dd/deploy/static/img/games/landingPromo/gulag.png',
+	status: 1, // 0 - alfa, 1 - beta, 2 - good,
+	shortDescription: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit.',
+	brandColor: '#E40F2A',
+	id: 'gulag-ussr',
+
+	idCommerceJs: 'prod_BkyN5YDLjeo0b6',
+	serial: '4',
+	price: '',
+	categories: [categoriesGames[1], categoriesGames[2], categoriesGames[5], categoriesGames[6]]
 };
 game.moreInfo = {
   players: "2-8",

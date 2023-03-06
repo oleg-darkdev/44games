@@ -36,7 +36,7 @@ let categoriesGames = [
 		emoji: '🗿'
 	},
 	{
-		text: 'It',
+		text: 'IT',
 		emoji: '🤖'
 	}
 	//         {

@@ -8,6 +8,7 @@ game.promo = {
 	status: 1, // 0 - alfa, 1 - beta, 2 - good,
 	brandColor: '#702282',
 	id: 'kanbanel',
+	idCommerceJs: 'prod_gnZO5kYdaxw7MN',
 	serial: '5',
 	price: 0,
 	sale: 50
