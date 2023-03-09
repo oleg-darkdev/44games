@@ -59,7 +59,7 @@
 
 <footer class="footer bg-base-200 p-10 text-base-content">
 	<div>
-		<img class="h-40 w-auto" src="./images/partner_44_cubes.svg" alt="" />
+		<img class="h-40 w-auto" src="./images/44_cubes.svg" alt="" />
 		<!-- <p>44Games<br />DarkDev progect od 2019 roku działamy</p> -->
 	</div>
 	<div>
