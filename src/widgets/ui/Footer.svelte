@@ -1,6 +1,65 @@
+<script>
+	import { FooterLink } from '../../shared';
+
+	// https://czachagames.pl/czas-i-koszty-dostawy/
+	const firstColumnLinks = [
+		{
+			text: 'Czas i koszty dostawy',
+			link: ''
+		},
+		{
+			text: 'Czas i koszty dostawy',
+			link: ''
+		},
+		{
+			text: 'Kontact',
+			link: ''
+		},
+		{
+			text: 'Reklamacje i zwroty',
+			link: ''
+		},
+		{
+			text: 'Czas realizacji zamówień',
+			link: ''
+		},
+		{
+			text: 'Bezpieczne zakupy',
+			link: ''
+		},
+		{
+			text: 'Program Lojalnościowy',
+			link: ''
+		},
+		{
+			text: 'Sposoby płatności',
+			link: ''
+		}
+	];
+
+	const secondColumnLinks = [
+		{
+			text: 'Warsztaty',
+			link: ''
+		},
+		{
+			text: 'O nas',
+			link: ''
+		},
+		{
+			text: 'Instrukcje',
+			link: ''
+		},
+		{
+			text: 'Opinie Klientów',
+			link: ''
+		}
+	];
+</script>
+
 <footer class="footer bg-base-200 p-10 text-base-content">
 	<div>
-    <img class="h-40 w-auto" src="./images/partner_44_cubes.svg" alt="">
+		<img class="h-40 w-auto" src="./images/partner_44_cubes.svg" alt="" />
 		<!-- <p>44Games<br />DarkDev progect od 2019 roku działamy</p> -->
 	</div>
 	<div>
@@ -12,25 +71,17 @@
 				alt=""
 			/>
 		</a>
-
 	</div>
 	<div>
 		<span class="footer-title">Obsługa klienta</span>
-		<a class="link-hover link">Czas i koszty dostawy</a>
-		<!-- https://czachagames.pl/czas-i-koszty-dostawy/ -->
-		<a class="link-hover link">Kontact</a>
-		<a class="link-hover link">Reklamacje i zwroty</a>
-		<a class="link-hover link">Czas realizacji zamówień</a>
-		<a class="link-hover link">Bezpieczne zakupy</a>
-		<a class="link-hover link">Program Lojalnościowy</a>
-		<a class="link-hover link">Bezpieczne zakupy</a>
-		<a class="link-hover link">Sposoby płatności</a>
+		{#each firstColumnLinks as link}
+			<FooterLink {link} />
+		{/each}
 	</div>
 	<div>
 		<span class="footer-title">Warto zajrzeć</span>
-		<a class="link-hover link">Warsztaty</a>
-		<a class="link-hover link">O nas</a>
-		<a class="link-hover link">Instrukcje</a>
-		<a class="link-hover link">Opinie Klientów</a>
+		{#each secondColumnLinks as link}
+			<FooterLink {link} />
+		{/each}
 	</div>
 </footer>
