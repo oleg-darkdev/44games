@@ -1,8 +1,7 @@
 <script>
-	import AddBacketBtn from '../../entities/ui/AddBacketBtn.svelte';
+	import {AddBacketBtn} from '../../entities';
 
-	export let game;
-	// console.log(game.promo);
+	export let game, cart;
 </script>
 
 <div id={game.promo.serial} class="indicator mr-2">
@@ -116,7 +115,7 @@
 				<span class="text-3xl font-bold text-gray-900 dark:text-white"
 					>${game.promo.price ? 0 : game.promo.price}</span
 				>
-				<AddBacketBtn />
+				<AddBacketBtn {cart} gameId={game.promo.idCommerceJs}/>
 			</div>
 		</div>
 	</div>

@@ -1,14 +1,15 @@
 <script>
 	import { flip } from 'svelte/animate';
 	import { onDestroy } from 'svelte';
-	import CardShop from './CardShop.svelte';
+	import { CardShop } from '../index';
 
 	export let games,
-		speed = 500,
+		cart,
+		speed = 200,
 		controlColor = '#444',
 		controlScale = '0.5',
 		autoplay = false,
-		autoplaySpeed = 5000,
+		autoplaySpeed = 7000,
 		displayControls = true;
 
 	let interval;
@@ -51,17 +52,14 @@
 		stopAutoPlay();
 	});
 </script>
-
+<!-- -->
 <div id="carousel-container">
 	<div id="carousel-images">
 		{#each games as game (game.promo.serial)}
-			<div
-				style=""
-				on:mouseover={stopAutoPlay}
+			<div on:mouseover={stopAutoPlay}
 				on:mouseout={startAutoPlay}
-				animate:flip={{ duration: speed }}
-			>
-				<CardShop {game} />
+				animate:flip={{ duration: speed }} >
+				<CardShop {game} {cart} />
 			</div>
 		{/each}
 	</div>
